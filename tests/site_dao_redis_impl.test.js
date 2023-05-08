@@ -110,7 +110,7 @@ test(`${testSuiteName}: insert with coordinates`, async () => {
   expect(siteFromRedis).toEqual(expectedSiteHash);
 });
 
-test.only(`${testSuiteName}: findById with existing site`, async () => {
+test(`${testSuiteName}: findById with existing site`, async () => {
   const site = {
     id: 4,
     capacity: 5.5,
@@ -153,7 +153,7 @@ test(`${testSuiteName}: findById with missing site`, async () => {
 });
 
 // This test is for Challenge #1.
-test.skip(`${testSuiteName}: findAll with multiple sites`, async () => {
+test.only(`${testSuiteName}: findAll with multiple sites`, async () => {
   const sites = [
     {
       id: 1,
